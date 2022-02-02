@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 public class GetOrThrow<T> {
-    public static final String DEFAULT_ERROR_MESSAGE = "Не удалось найти сущность";
+    public static final String DEFAULT_ERROR_MESSAGE = "Entity not found";
 
     private final Optional<T> value;
 
