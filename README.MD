@@ -43,7 +43,7 @@ entityRepository.findOneById(1) -> Entity object with id 1
 entityRepository.findOneById(100) -> throw new RuntimeException("Not found entity with id = 100")
 ```
 
-###NotFoundExceptionMessage
+### NotFoundExceptionMessage
 `@NotFoundExceptionMessage` adds error message in `GetOrThrow`. You can add `{}` and param value from method will be inserted in error message.
 
 Example:
@@ -68,7 +68,7 @@ With `@NotFoundExceptionMessage` you can change errorMessage in one place.
 You can use `GetOrThrow` without `@NotFoundExceptionMessage`. `GetOrThrow` will throw Exception with default error message `Entity not found`
 
 
-###GetOrThrowExceptionFactory
+### GetOrThrowExceptionFactory
 
 In default GetOrThrow will throw RuntimeException.
 You can change this behavior with GetOrThrowExceptionFactory bean.
